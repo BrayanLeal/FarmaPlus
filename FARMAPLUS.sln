@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FARMAPLUS", "FARMAPLUS\FARMAPLUS.csproj", "{06478D91-8500-4E02-B710-9EE3034C18BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL", "DLL\DLL.csproj", "{A16318BB-D5ED-4EF2-9712-2EF7CE39B7EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06478D91-8500-4E02-B710-9EE3034C18BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06478D91-8500-4E02-B710-9EE3034C18BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06478D91-8500-4E02-B710-9EE3034C18BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06478D91-8500-4E02-B710-9EE3034C18BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16318BB-D5ED-4EF2-9712-2EF7CE39B7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16318BB-D5ED-4EF2-9712-2EF7CE39B7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16318BB-D5ED-4EF2-9712-2EF7CE39B7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16318BB-D5ED-4EF2-9712-2EF7CE39B7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1466DC8-9174-46B4-922E-829109EE5488}
+	EndGlobalSection
+EndGlobal
