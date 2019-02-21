@@ -7,26 +7,54 @@
 <h2>Empleados</h2>
 <h4>Agregar empleado</h4>
 <form method="POST">
-    <label for="name">Nombre empleado:</label>
+    <label for="id"> ID Empleado: </label>
+    <input id="id" type="number" cod="ID" />
+    <br />
+    <label for="name">Nombre:</label>
     <input name="name" type="text" id="name" />
+    <br />
+    <label for="hours"> Hora de Ingreso: </label>
+    <input hours="hours" type="time" id="hours" />
+    <br />
+    <label for="Salario"> Salario: </label>
+    <input sal="sal" type="text" id="sal" />
+    <br />
+    <label for="estadia"> Empleado en oficina </label>
+    <input estadia="estadia" type="checkbox" id="estadia" />
+    <br />
     <input type="submit" />
 </form>
 <hr />
 <h2>Filtrar empleado</h2>
 <form method="GET">
-    <label for="name">Nombre empleado:</label>
+    <label for="id"> ID Empleado: </label>
+    <input id="id" type="number" cod="ID" />
+    <br />
+    <label for="name">Nombre:</label>
     <input name="name" type="text" id="name" />
-    <label for="office">¿Esta en la oficina?: </label>
-    <input name="office" type="checkbox" value="true" id="office" />
+    <br />
+    <label for="hours"> Hora de Ingreso: </label>
+    <input hours="hours" type="time" id="hours" />
+    <br />
+    <label for="Salario"> Salario: </label>
+    <input sal="sal" type="text" id="sal" />
+    <br />
+    <label for="estadia">El empleado se encuentra en la oficina? </label>
+    <input name="estadia" type="checkbox" value="true" id="estadia" />
+    <br />
     <input type="submit" />
 </form>
 <hr />
 <ul>
     @foreach (var empleado in @Model.Empleados)
     {
-        <li>
-            @empleado.Name
-        </li>
+    <li>
+        @empleado.ID
+        @empleado.Nombre
+        @empleado.Hours
+        @empleado.Sal
+        @empleado.Estadia
+    </li>
     }
 </ul>
 

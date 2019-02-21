@@ -56,16 +56,16 @@ namespace FARMAPLUS.Controllers
             var viewModel = (CEVM)HttpContext.Application["CitasEmpleado"];
             viewModel.Empleados.Add(new Empleado
             {
-                Name = name,
+                Nombre = name,
                 Hours = 0,
-                Office = false,
+                Estadia = false,
                 Citas = new List<Cita>(0)
             });
             return View(viewModel);
         }
 
         [HttpGet]
-        public ActionResult Citas()
+        public ActionResult Citas( String z)
         {
             var viewModel = new CEVM
             {
@@ -85,13 +85,13 @@ namespace FARMAPLUS.Controllers
         }
 
         [HttpPost]
-        public ActionResult Citas(String i)
+        public ActionResult Citas()
         {
             var viewModel = (CEVM)HttpContext.Application["CitasEmpleado"];
             Random rnd = new Random();
             foreach (var empleado in viewModel.Empleados)
             {
-                var nCitas = rnd.Next(1, 5);
+                var nCitas = rnd.Next(1, 3);
                 for (int o = 0; o < nCitas; o++)
                 {
                     TimeSpan tSpan = new TimeSpan(2 * o, 0, 0);
